@@ -1,0 +1,12 @@
+{
+  "name": "trading-ui",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "serve -s build",
+    "build": "react-scripts build"
+  }
+}
