@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trading App</title>
+</head>
+<body>
+
+<h1>✅ Trading System Live</h1>
+
+<div id="metrics"></div>
+
+<script>
+async function load(){
+  const m = await fetch("/api/metrics").then(r=>r.json());
+  document.getElementById("metrics").innerHTML =
+    "Equity: " + m.equity + "<br>" +
+    "Sharpe: " + m.sharpe;
+}
+
+load();
+</script>
+
+</body>
+</html>
